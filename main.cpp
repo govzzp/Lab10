@@ -5,7 +5,7 @@ using namespace std;
 
 int A[10] = {52, 49, 80, 36, 14, 58, 61, 23, 97, 75};
 
-//´òÓ¡Êý×éÄÚÈÝ
+//ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void Output()
 {
 	int i;
@@ -14,18 +14,18 @@ void Output()
 	cout << endl;
 }
 
-//²åÈëÅÅÐò
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void InsertSort(int Array[], int length)
 {
 	int i, j;
 	int tmp;
 	for (i = 1; i < length; i++)
 	{
-		tmp = Array[i];//È¡³öÎÞÐò±íµÄµÚÒ»¸öÔªËØ²åÈëµ½ÓÐÐò±í
-		for (j = i - 1; j >= 0; j--)//ÓÐÐò±íÅÅÐò ¶Ïµã¢Ù
+		tmp = Array[i];//È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ò»ï¿½ï¿½Ôªï¿½Ø²ï¿½ï¿½ëµ½ï¿½ï¿½ï¿½ï¿½ï¿½
+		for (j = i - 1; j >= 0; j--)//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ïµï¿½ï¿½
 		{
 			if (tmp < Array[j])
-				Array[j + 1] = Array[j];//Î»ÖÃjµÄÔªËØÏòºóÒÆ¶¯
+				Array[j + 1] = Array[j];//Î»ï¿½ï¿½jï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
 			else
 				break;
 		}
@@ -33,21 +33,21 @@ void InsertSort(int Array[], int length)
 
 		Output();
 
-	}//¶Ïµã¢Ú
+	}//ï¿½Ïµï¿½ï¿½
 }
 
-//Ñ¡ÔñÅÅÐò
+//Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void SelectSort(int Array[], int  length)
 {
 	int i, j, min;
 	int tmp;
 	for (i = 0; i < length - 1; i++)
 	{
-		min = i; //Ä¬ÈÏÎÞÐò±íµÄµÚÒ»¸öÔªËØArray[i]Îª×îÐ¡Öµ
-		for (j = i + 1; j < length; j++) //²éÕÒ×îÐ¡ÖµÏÂ±ê ¶Ïµã¢Û
+		min = i; //Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½Array[i]Îªï¿½ï¿½Ð¡Öµ
+		for (j = i + 1; j < length; j++) //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Öµï¿½Â±ï¿½ ï¿½Ïµï¿½ï¿½
 			if (Array[j] < Array[min])
 				min = j;
-		if (min != i) //ÕÒµ½ÁË±ÈiÎ»ÖÃ¸üÐ¡µÄÔªËØÇÒminÓëiµÄÖµ²»Í¬
+		if (min != i) //ï¿½Òµï¿½ï¿½Ë±ï¿½iÎ»ï¿½Ã¸ï¿½Ð¡ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½minï¿½ï¿½iï¿½ï¿½Öµï¿½ï¿½Í¬
 		{
 			tmp = Array[i];
 			Array[i] = Array[min];
@@ -56,7 +56,7 @@ void SelectSort(int Array[], int  length)
 
 		Output();
 
-	}//¶Ïµã¢Ü
+	}//ï¿½Ïµï¿½ï¿½
 }
 
 int main()
@@ -67,6 +67,6 @@ int main()
 	InsertSort(A,10);
 	cout << endl;
 	SelectSort(A,10);
-
+	cout<< "Hello World"<<endl;
 	return 0;
 }
